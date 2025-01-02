@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Representative Map</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Representative Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
 </head>
 <body>
-  <div id="map"></div>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script>
-    const map = L.map('map').setView([20.5937, 78.9629], 5); // India's coordinates
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    <h1>Public Representative Map</h1>
+    <div id="map" style="height: 500px;"></div>
 
-    map.on('click', async (e) => {
-      const { lat, lng } = e.latlng;
-      // Example logic to determine ward based on latitude
-      const ward = lat > 20 ? 'Ward A' : 'Ward B';
-
-      const response = await fetch(`http://localhost:3000/representatives?ward=${ward}`);
-      const data = await response.json();
-
-      alert(`Representatives in ${ward}: ${JSON.stringify(data)}`);
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
