@@ -1,6 +1,3 @@
-Here's a good README template for your project:
-
----
 
 # **Public Representative API**
 
@@ -94,32 +91,3 @@ node fastify.js
 - **Frontend**: HTML, CSS, JavaScript
 - **Map Integration**: Leaflet.js / Google Maps API (optional)
 
----
-
-## **Contributing**
-
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add new feature"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a Pull Request.
-
----
-
-
-
----
-
-
---- 
-
-You can modify the details to suit your specific project requirements! Let me know if you'd like help editing any specific part.
