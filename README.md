@@ -1,14 +1,3 @@
-Here's a suggestion for the repository name and a detailed README for your project:
-
----
-
-### **Repo Name:**  
-`public-rep-locator`  
-**or**  
-`repfinder-india`  
-
----
-
 ### **README.md**  
 
 ```markdown
@@ -40,19 +29,14 @@ An interactive map-based web app to locate and view public representatives (MLAs
 
 ---
 
-## 📸 Screenshots  
-| Home Page | Representative Info | Add Details |
-|-----------|---------------------|-------------|
-| ![Home](screenshots/home.png) | ![Popup](screenshots/popup.png) | ![Form](screenshots/form.png) |
-
 ---
 
 ## 🚀 Setup & Installation  
 
 ### 1. Clone the Repository  
 ```bash
-git clone https://github.com/your-username/public-rep-locator.git
-cd public-rep-locator
+git clone https://github.com/your-username/repo-name.git
+cd repo-name
 ```
 
 ### 2. Backend Setup (FastAPI)  
@@ -67,7 +51,7 @@ uvicorn main:app --reload
 ### 3. Frontend Setup  
 ```bash
 cd frontend
-# Open index.html in your browser
+# Open index.html in your browser or use Live Server (recommended)
 ```
 
 ---
@@ -135,9 +119,6 @@ cd frontend
 
 ---
 
-## 📝 License  
-This project is licensed under the **MIT License**.
-
 ---
 
 ## ✨ Acknowledgments  
@@ -150,13 +131,30 @@ This project is licensed under the **MIT License**.
 ## 👨‍💻 About  
 Developed by **Aayush Ulhas Chavanke** 🚀  
 If you like this project, ⭐ the repository and contribute to make it better!  
+
+---
+
+## 💻 Local Setup & Running Tips  
+
+### **Viewing the Map Locally**  
+
+1. **Use VS Code Live Server**:  
+   - Install the **Live Server extension** in **VS Code**.  
+   - Right-click `index.html` > **Open with Live Server**.  
+   - This allows you to bypass **CORS** restrictions and view the map smoothly.
+
+2. **Local Server Option**:  
+   - **Python HTTP server**:  
+     ```bash
+     python -m http.server 8000
+     ```
+   - Open `http://localhost:8000` to view your project.
+
+3. **Geolocation (Optional)**:  
+   - Ensure **Geolocation API** works properly by running locally with **Live Server** or a local server.  
+   - Use the browser's geolocation to pinpoint your area automatically.
 ```
 
 ---
 
-### **Additional Notes:**  
-- Add screenshots once the frontend is built.  
-- If hosting, provide the demo link in the **Live Demo** section.  
-- Add a `CONTRIBUTING.md` if you expect external contributions.  
-
-Would you like me to generate the FastAPI `requirements.txt` or extend the README for Docker support?
+This updated `README.md` includes the **local server setup** instructions for testing map-related functionalities without running into CORS issues, along with the steps for using **Live Server** in VS Code. Let me know if you'd like any more adjustments!
